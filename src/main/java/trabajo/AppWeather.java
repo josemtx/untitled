@@ -6,7 +6,7 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 import org.json.JSONArray;
 
-public class App {
+public class AppWeather {
     public static void main(String[] args) {
         // Configuración del cliente MongoDB
         MongoClient mongoClient = new MongoClient("localhost", 27017);
