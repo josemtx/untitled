@@ -7,7 +7,6 @@
     <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="NUEVOS CAMBIOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/ForecastDataPreprocessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/ForecastDataPreprocessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715968495497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NUEVOS CAMBIOS">
+      <option name="closed" value="true" />
+      <created>1716052412202</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716052412202</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
