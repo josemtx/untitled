@@ -31,8 +31,7 @@ public class ForecastDataPreprocessor {
                         .append("city", cityName)
                         .append("datetime", dt_txt)
                         .append("description", description)
-                        .append("temperature", new Document()
-                                .append("current", temp)
+                        .append("temperature", new Document().append("current", temp)
                         .append("windSpeed", windSpeed));
 
                 processedList.put(document);

@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="NUEVOS CAMBIOS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/ForecastDataPreprocessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/ForecastDataPreprocessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Davidgrcdz"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="32b77602-247d-4a39-afb3-dd218cb9ecc5" />
+        <option name="url" value="https://github.com/josemtx/untitled.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -80,6 +91,46 @@
       <option name="presentableId" value="Default" />
       <updated>1715079042040</updated>
     </task>
+    <task id="LOCAL-00001" summary="NUEVOS CAMBIOS">
+      <option name="closed" value="true" />
+      <created>1715968495497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715968495497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="e9710fbe-59ee-494c-ac2b-0f0ef028635a" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="e9710fbe-59ee-494c-ac2b-0f0ef028635a">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NUEVOS CAMBIOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="NUEVOS CAMBIOS" />
   </component>
 </project>

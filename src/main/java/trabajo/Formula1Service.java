@@ -9,8 +9,8 @@ import java.util.List;
 public class Formula1Service {
     private static final String URL_TEMPLATE = "https://api.openf1.org/v1/";
 
-    public static String getDrivers() throws IOException {
-        return makeRequest("drivers");
+    public static String getDrivers(int session_key) throws IOException {
+        return makeRequest("drivers?session_key=" + session_key);
     }
     public static String getStints() throws IOException {
         return makeRequest("stints");
