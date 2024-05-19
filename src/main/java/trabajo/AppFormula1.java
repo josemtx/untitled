@@ -16,8 +16,15 @@ public class AppFormula1 {
 
         String stints = Formula1Service.getStints(sessionsArray);
         JSONArray stintsArray = new JSONArray(stints);
-        System.out.println(stintsArray + "\n");
+        //System.out.println(stintsArray + "\n");
 
+        String weather = Formula1Service.getWeather(sessionsArray);
+        JSONArray weatherArray = new JSONArray(weather);
+        //System.out.println(weatherArray + "\n");
+
+        String positions = Formula1Service.getPosition(sessionsArray);
+        JSONArray positionsArray = new JSONArray(positions);
+        System.out.println(positionsArray + "\n");
 
 
     }

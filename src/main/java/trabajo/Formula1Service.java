@@ -13,6 +13,15 @@ import java.util.List;
 public class Formula1Service {
     private static final String URL_TEMPLATE = "https://api.openf1.org/v1/";
 
+    public static String getSessions() throws IOException {
+        StringBuilder sessions = new StringBuilder();
+        List<Integer> years = List.of(2023, 2024);
+        for (int year : years) {
+            String response = makeRequest("sessions?year=" + year + "&session_name=Race");
+            sessions.append(response).append("\n");
+        }
+        return sessions.toString();
+    }
     public static String getDrivers(JSONArray sessionArray) throws IOException {
         JSONArray drivers = new JSONArray();
         for (int i = 0; i < sessionArray.length(); i++) {
@@ -25,6 +34,7 @@ public class Formula1Service {
         }
         return drivers.toString();
     }
+
     public static String getStints(JSONArray sessionsArray) throws IOException {
         JSONArray stints = new JSONArray();
         for (int i = 0; i < sessionsArray.length(); i++) {
@@ -38,18 +48,30 @@ public class Formula1Service {
         return stints.toString();
     }
 
-    public static String getCarData() throws IOException {
-        return makeRequest("car_data");
+    public static String getPosition(JSONArray sessionsArray) throws IOException {
+        JSONArray positions = new JSONArray();
+        for (int i = 0; i < sessionsArray.length(); i++) {
+            int session_key = sessionsArray.getJSONObject(i).getInt("session_key");
+            String response = makeRequest("position?session_key=" + session_key);
+            JSONArray positionsArray = new JSONArray(response);
+            for (int j = 0; j < positionsArray.length(); j++) {
+                positions.put(positionsArray.getJSONObject(j));
+            }
+        }
+        return positions.toString();
     }
 
-    public static String getSessions() throws IOException {
-        StringBuilder combinedResponse = new StringBuilder();
-        List<Integer> years = List.of(2023, 2024);
-        for (int year : years) {
-            String response = makeRequest("sessions?year=" + year + "&session_name=Race");
-            combinedResponse.append(response).append("\n");
+    public static String getWeather(JSONArray sessionsArray) throws IOException {
+        JSONArray weather = new JSONArray();
+        for (int i = 0; i < sessionsArray.length(); i++) {
+            int session_key = sessionsArray.getJSONObject(i).getInt("session_key");
+            String response = makeRequest("weather?session_key=" + session_key);
+            JSONArray weatherArray = new JSONArray(response);
+            for (int j = 0; j < weatherArray.length(); j++) {
+                weather.put(weatherArray.getJSONObject(j));
+            }
         }
-        return combinedResponse.toString();
+        return weather.toString();
     }
 
     private static String makeRequest(String request) throws IOException {
@@ -60,7 +82,7 @@ public class Formula1Service {
         int statusCode = httpResponse.getStatusLine().getStatusCode();
         if (statusCode == 429) {
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

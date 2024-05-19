@@ -3,7 +3,6 @@ package trabajo;
 import org.json.JSONObject;
 
 public class FormulaDataPreprocessor {
-    public static void main(String[] args) throws Exception {
+    // Métodos para procesar los datos de la fórmula 1
 
-    }
 }
