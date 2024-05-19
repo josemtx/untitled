@@ -115,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716072472502</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cambios en los métodos de consultas a la API de formula 1">
+      <option name="closed" value="true" />
+      <created>1716115399735</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716115399735</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

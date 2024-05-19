@@ -8,17 +8,21 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Formula1Service {
     private static final String URL_TEMPLATE = "https://api.openf1.org/v1/";
 
-    public static String getSessions() throws IOException {
-        StringBuilder sessions = new StringBuilder();
-        List<Integer> years = List.of(2023, 2024);
+    public static String getSessions(List<Integer> years) throws IOException {
+        JSONArray sessions = new JSONArray();
         for (int year : years) {
             String response = makeRequest("sessions?year=" + year + "&session_name=Race");
-            sessions.append(response).append("\n");
+            JSONArray sessionsArray = new JSONArray(response);
+            for (int i = 0; i < sessionsArray.length(); i++) {
+                sessions.put(sessionsArray.getJSONObject(i));
+            }
         }
         return sessions.toString();
     }
@@ -82,7 +86,7 @@ public class Formula1Service {
         int statusCode = httpResponse.getStatusLine().getStatusCode();
         if (statusCode == 429) {
             try {
-                Thread.sleep(500);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
