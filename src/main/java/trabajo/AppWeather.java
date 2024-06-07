@@ -17,6 +17,7 @@ public class AppWeather {
         WeatherService weatherService = new WeatherService();
         ForecastDataPreprocessor preprocessor = new ForecastDataPreprocessor();
 
+
         try {
             String[] cities = {"Manama,bh",
                     "Jeddah,sa",

@@ -3,13 +3,10 @@ package trabajo;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.fluent.Request;
 import org.apache.http.client.fluent.Response;
-
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Formula1Service {

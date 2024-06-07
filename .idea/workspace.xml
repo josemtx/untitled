@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="Cambios en los métodos de consultas a la API de formula 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/AppWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppWeather.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/FormulaDataPreprocessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/FormulaDataPreprocessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/MongoDBClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/MongoDBClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +26,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Davidgrcdz"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Davidgrcdz&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -123,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716115399735</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cambios en los métodos de consultas a la API de formula 1">
+      <option name="closed" value="true" />
+      <created>1716140143017</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716140143017</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

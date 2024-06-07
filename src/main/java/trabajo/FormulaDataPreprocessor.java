@@ -70,5 +70,4 @@ public class FormulaDataPreprocessor {
         return processedPositions;
     }
 
-    // Añade aquí métodos similares para otros tipos de datos
 }
