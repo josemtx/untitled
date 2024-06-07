@@ -26,14 +26,16 @@ public class FormulaDataPreprocessor {
     }
 
     public static JSONArray processDriversData(JSONArray arrayDrivers) {
+        JSONArray processedDrivers = new JSONArray();
         for (int i = 0; i < arrayDrivers.length(); i++) {
             JSONObject rawDriver = arrayDrivers.getJSONObject(i);
-            rawDriver.remove("team_colour");
-            rawDriver.remove("broadcast_name");
-            rawDriver.remove("meeting_key");
-            rawDriver.remove("name_acronym");
+            JSONObject driver = new JSONObject();
+            driver.put("driver_number", rawDriver.getInt("driver_number"));
+            driver.put("full_name", rawDriver.getString("full_name"));
+            driver.put("session_key", rawDriver.getString("session_key"));
+            processedDrivers.put(driver);
         }
-        return arrayDrivers;
+        return processedDrivers;
     }
 
     public static JSONArray processStintsData(JSONArray arrayStints) {
