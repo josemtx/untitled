@@ -10,7 +10,7 @@ public class AppWeather {
     public static void main(String[] args) {
         // Configuración del cliente MongoDB
         MongoClient mongoClient = new MongoClient("localhost", 27017);
-        MongoDatabase database = mongoClient.getDatabase("CLIMATRAVEL");
+        MongoDatabase database = mongoClient.getDatabase("F1-WeatherRec");
         MongoCollection<Document> collection = database.getCollection("forecast_data");
 
         // Instancia de servicios y preprocesador
