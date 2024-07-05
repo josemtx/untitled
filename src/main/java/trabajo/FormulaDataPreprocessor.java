@@ -32,7 +32,7 @@ public class FormulaDataPreprocessor {
             JSONObject driver = new JSONObject();
             driver.put("driver_number", rawDriver.getInt("driver_number"));
             driver.put("full_name", rawDriver.getString("full_name"));
-            driver.put("session_key", rawDriver.getString("session_key"));
+            driver.put("session_key", rawDriver.getInt("session_key"));
             processedDrivers.put(driver);
         }
         return processedDrivers;
