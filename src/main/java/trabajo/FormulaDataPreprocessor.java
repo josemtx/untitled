@@ -50,7 +50,6 @@ public class FormulaDataPreprocessor {
         for (int i = 0; i < arrayWeather.length(); i++) {
             JSONObject rawWeatherData = arrayWeather.getJSONObject(i);
             rawWeatherData.remove("meeting_key");
-            rawWeatherData.remove("wind_direction");
             rawWeatherData.remove("pressure");
         }
         return arrayWeather;
