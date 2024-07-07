@@ -71,4 +71,12 @@ public class FormulaDataPreprocessor {
         return processedPositions;
     }
 
+    public static JSONArray processPitStopsData(JSONArray arrayPitStops) {
+        for (int i = 0; i < arrayPitStops.length(); i++) {
+            JSONObject rawStint = arrayPitStops.getJSONObject(i);
+            rawStint.remove("meeting_key");
+        }
+        return arrayPitStops;
+    }
+
 }

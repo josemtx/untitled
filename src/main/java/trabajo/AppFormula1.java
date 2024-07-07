@@ -31,6 +31,10 @@ public class AppFormula1 {
         JSONArray positionsArray = new JSONArray(positions);
         JSONArray allPositionsArray = FormulaDataPreprocessor.processPositionData(positionsArray);
 
+        String pitStops = Formula1Service.getPitStops(sessionsArray);
+        JSONArray pitStopsArray = new JSONArray(pitStops);
+        JSONArray allPitStopsArray = FormulaDataPreprocessor.processPitStopsData(pitStopsArray);
+
 
         MongoDBClient mongoDBClient = new MongoDBClient();
 
@@ -40,5 +44,6 @@ public class AppFormula1 {
         mongoDBClient.insertWeatherData(allWeatherArray);
         mongoDBClient.insertPositionsData(allPositionsArray);
 
+        mongoDBClient.insertPitStopsData(allPitStopsArray);
     }
 }

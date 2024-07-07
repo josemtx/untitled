@@ -54,4 +54,12 @@ public class MongoDBClient {
             collection.insertOne(doc);
         }
     }
+
+    public void insertPitStopsData(JSONArray pitStopsData) {
+        MongoCollection<Document> collection = database.getCollection("pit_stops");
+        for (int i = 0; i < pitStopsData.length(); i++) {
+            Document doc = Document.parse(pitStopsData.getJSONObject(i).toString());
+            collection.insertOne(doc);
+        }
+    }
 }

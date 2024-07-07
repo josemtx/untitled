@@ -75,6 +75,20 @@ public class Formula1Service {
         return weather.toString();
     }
 
+    public static String getPitStops(JSONArray sessionsArray) throws IOException {
+        JSONArray pitStops = new JSONArray();
+        for (int i = 0; i < sessionsArray.length(); i++) {
+            int session_key = sessionsArray.getJSONObject(i).getInt("session_key");
+            String response = makeRequest("pit?session_key=" + session_key);
+            JSONArray pitStopsArray = new JSONArray(response);
+            for (int j = 0; j < pitStopsArray.length(); j++) {
+                pitStops.put(pitStopsArray.getJSONObject(j));
+            }
+        }
+        return pitStops.toString();
+    }
+
+
     private static String makeRequest(String request) throws IOException {
         String url = String.format(URL_TEMPLATE + request);
         Response response = Request.Get(url).execute();

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="cambio en el método">
+    <list default="true" id="d373be65-01a2-46dc-baaa-fe8cb5609cd4" name="Changes" comment="coegemos el viento en el metodo processWeather">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/AppFormula1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/Formula1Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/FormulaDataPreprocessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/FormulaDataPreprocessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/trabajo/MongoDBClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/trabajo/MongoDBClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720174077858</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="coegemos el viento en el metodo processWeather">
+      <option name="closed" value="true" />
+      <created>1720304586775</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720304586775</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +208,7 @@
     <MESSAGE value="Añadido de los datos en la Base de datos mongoDB" />
     <MESSAGE value="cambio en el método processDriversData" />
     <MESSAGE value="cambio en el método" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambio en el método" />
+    <MESSAGE value="coegemos el viento en el metodo processWeather" />
+    <option name="LAST_COMMIT_MESSAGE" value="coegemos el viento en el metodo processWeather" />
   </component>
 </project>
